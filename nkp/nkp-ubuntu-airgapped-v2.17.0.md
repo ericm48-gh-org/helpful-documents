@@ -69,12 +69,12 @@ echo \
 
 Update:
 ```
-sudo apt-get update
+sudo apt-get -y update
 ```
 
 Install Docker:
 ```
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 Handle Groups:
@@ -154,7 +154,7 @@ export NUTANIX_USER='pc-user'                                                   
 export NUTANIX_PASSWORD='pc-password'                                                          # Ex: 'thePassword1234'
 export NUTANIX_IMAGE='nkp-image-name'                                                          # Ex: nkp-ubuntu-24.04-release-cis-1.34.1-20251206061851.qcow2
 export NUTANIX_SUBNET='PC subnet to deploy ControlPlaneNodes and WorkLoadNodes into'.          # Ex: 'primary-PHX-POC236'
-export NUTANIX_CLUSTER_NAME='nkp-cluster-name'                                                 # Ex: 'nkp-mgmt'. **Note: This must match license-name.
+export NUTANIX_CLUSTER_NAME='nkp-cluster-name'                                                 # Ex: 'nkp-mgmt'. ** Note: This must match license-name.
 export NUTANIX_CONTROLPLANE_VIP='single IP from subnet above that is outside of DHCP range'.   # Ex: '10.1.1.5'
 export NUTANIX_METALLB_IP_RANGE='range of IPs from subnet above that is outside of DHCP range. # Ex: '10.1.1.6-10.1.1.10'
 export NUTANIX_ENDPOINT='https://prism-central-url:port'.                                      # Ex: 'https://x.x.x.7:9440'
