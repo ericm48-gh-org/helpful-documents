@@ -185,3 +185,9 @@ nkp create cluster nutanix \
   --airgapped=true \
   -v5 2>&1 | tee -a ./nkp-create-mgmt-cluster-log.txt
 ```
+
+Once Management Cluster is created successfully, extract the base-credential:
+```
+nkp get dashboard --kubeconfig='./nkp.conf'
+```
+
