@@ -4,6 +4,12 @@ Change Log:
 - 16-Jun-2026:
   - Added 2.17.1 Updates.
 
+
+### JumpBox/Bastion Server Requirements (Minimum):
+  - 4 Core CPU
+  - 16G Memory
+  - 250G Disk
+
 ### Upload the NKP Rocky or Ubuntu image to Prism Central
 
 ### Install NKP CLI
