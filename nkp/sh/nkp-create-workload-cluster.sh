@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Mgmt Cluster Full Size:
+# Workload Cluster Full Size:
 
 nkp create cluster nutanix \
-  --cluster-name=${NUTANIX_MGMT_CLUSTER_NAME} \
+  --cluster-name=${NUTANIX_WORKLOAD_CLUSTER_NAME} \
   --control-plane-prism-element-cluster=${NUTANIX_PE_CLUSTER} \
   --worker-prism-element-cluster=${NUTANIX_PE_CLUSTER} \
   --control-plane-subnets=${NUTANIX_SUBNET} \
@@ -15,8 +15,5 @@ nkp create cluster nutanix \
   --worker-vm-image=${NUTANIX_IMAGE} \
   --kubernetes-service-load-balancer-ip-range=${NUTANIX_METALLB_IP_RANGE} \
   --ssh-public-key-file=${NUTANIX_SSH_PUBLIC_KEY} \
-  --bundle='/data/inet/nkp-v2.17.1/container-images/*.tar' \
   --insecure=true \
-  --self-managed \
-  --airgapped=true \
-  -v5 2>&1 | tee -a /home/nutanix/nkp-create-mgmt-cluster-full-size-log.txt
+  -v5 2>&1 | tee -a /home/nutanix/nkp-create-workload-cluster-1-full-size-log2.txt &
