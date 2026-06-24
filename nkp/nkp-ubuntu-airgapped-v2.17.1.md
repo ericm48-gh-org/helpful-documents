@@ -10,6 +10,11 @@ Change Log:
   - 16G Memory
   - 250G Disk
 
+### Helpful exports & alias:
+```
+export PS1="\u@${HOSTNAME}:\$PWD>" ; export LS_COLORS=$(echo $LS_COLORS | sed "s/di=\(..\);../di=\1;93/"); alias dgo='du -Pshx * 2>/dev/null'; alias dgo2='du -h | sort -h'; alias ll='ls -latr' ;export DO=' --dry-run=client -o yaml' ;export DR=' --dry-run=client ' ;export RSN=' --restart=Never ' ;export NOW=' --force --grace-period 0 ' ;export OW=' -o wide ' ;export OY=' -o yaml ' ;alias ll='ls -latr'; alias kctx='kubectl config get-contexts' ;alias kall='kubectl get nodes,daemonsets.apps,deployments.apps,services,pods,ingress $OW';alias kgpo='kubectl get pods'; alias dgo='du -Pshx * 2>/dev/null'; alias dgo2='du -h | sort -h'; alias di='docker images';alias dp='docker ps';alias dpa='docker ps -a'; alias me='cd /dev2/sh'; alias ll='ls -latr'; alias eme='env |grep $@'; alias k=kubectl; alias kgpo='kubectl get pods'; alias kall='k get nodes,ds,deploy,svc,pods,ingress'
+```
+
 ### Upload the NKP Rocky or Ubuntu image to Prism Central
 
 ### Install NKP CLI
