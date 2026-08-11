@@ -44,16 +44,6 @@ Install NKP-CLI:
 install -o root -g root -m 0755 /data/inet/nkp-v2.18.0/cli/nkp /usr/local/bin/nkp
 ```
 
-Download NKP Bundle
-```
-curl -L -o nkp-bundle_v2.18.0_linux_amd64.tar.gz 'https://nkp-bundle-download-link'
-```
-
-Unzip bundle:
-```
-tar -xvf nkp-bundle_v2.18.0_linux_amd64.tar.gz
-```
-
 Download NKP Air-Gapped Bundle:
 ```
 curl -L -o nkp-air-gapped-bundle_v2.18.0_linux_amd64.tar.gz 'https://nkp-air-gapped-bundle-download-link'
@@ -168,7 +158,11 @@ Export Variables:
 ```
 export NUTANIX_USER='pc-user'                                                                  # Ex: 'admin'
 export NUTANIX_PASSWORD='pc-password'                                                          # Ex: 'thePassword1234'
-export NUTANIX_IMAGE='nkp-image-name'                                                          # Ex: nkp-ubuntu-24.04-release-cis-1.34.1-20251206061851.qcow2
+
+export NUTANIX_IMAGE='nkp-image-name'                                                          # Ubuntu is below, Rocky is provided for convenience.
+                                                                                               # Ex: nkp-ubuntu-24.04-release-cis-1.35.2-20260626141256.qcow2
+                                                                                               # Ex: nkp-rocky-9.7-release-cis-1.35.2-20260626061237.qcow2
+
 export NUTANIX_SUBNET='PC subnet to deploy ControlPlaneNodes and WorkLoadNodes into'.          # Ex: 'primary-PHX-POC236'
 export NUTANIX_MGMT_CLUSTER_NAME='nkp-cluster-name'                                            # Ex: 'nkp-mgmt'. ** Note: This must match license-name.
 export NUTANIX_CONTROLPLANE_VIP='single IP from subnet above that is outside of DHCP range'.   # Ex: '10.1.1.5'
