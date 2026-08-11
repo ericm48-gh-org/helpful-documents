@@ -514,3 +514,6 @@ kubectl logs cappp-controller-manager-dfc49968b-plsgn -n cappp-system --since=1h
 # Recommended Next Steps
 - Get the kubeconfig file (`nkp get kubeconfig -c $CLUSTER_NAME -n $WORKSPACE_NAMESPACE`)
 - [Nutanix CSI Driver install](https://gist.github.com/ryandotclair/b830dd32e48f3f1b05f982d835e45590) (Requires `nfs-utils` package on worker nodes for NFS and `open-iscsi` package for Block)
+
+# Reference:
+https://gist.github.com/ryandotclair/94bc4bc225375f5eed3012949ef64156
