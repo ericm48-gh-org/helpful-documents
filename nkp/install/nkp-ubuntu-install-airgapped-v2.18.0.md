@@ -160,8 +160,8 @@ export NUTANIX_USER='pc-user'                                                   
 export NUTANIX_PASSWORD='pc-password'                                                          # Ex: 'thePassword1234'
 
 export NUTANIX_IMAGE='nkp-image-name'                                                          # Ubuntu is below, Rocky is provided for convenience.
-                                                                                               # Ex: nkp-ubuntu-24.04-release-cis-1.35.2-20260626141256.qcow2
-                                                                                               # Ex: nkp-rocky-9.7-release-cis-1.35.2-20260626061237.qcow2
+                                                                                               # Ex: 'nkp-ubuntu-24.04-release-cis-1.35.2-20260626141256.qcow2'
+                                                                                               # Ex: 'nkp-rocky-9.7-release-cis-1.35.2-20260626061237.qcow2'
 
 export NUTANIX_SUBNET='PC subnet to deploy ControlPlaneNodes and WorkLoadNodes into'.          # Ex: 'primary-PHX-POC236'
 export NUTANIX_MGMT_CLUSTER_NAME='nkp-cluster-name'                                            # Ex: 'nkp-mgmt'. ** Note: This must match license-name.
